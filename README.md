@@ -6,6 +6,7 @@ Type / Runtime -safe c++ global temp variables. Why make local variables when th
 * Run time safe temp variable indexing!
 * L-value ***and*** r-value support!
 * Easily share global state, helps prevent nasty encapsulation bugs!
+* Header only library!
 
 # Usage
 
