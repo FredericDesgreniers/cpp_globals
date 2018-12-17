@@ -1,3 +1,5 @@
+#pragma once
+
 namespace globs {
     template <typename T, size_t max>
     T temps[max];
