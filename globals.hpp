@@ -10,7 +10,7 @@ namespace globs {
         static_assert(N < max, "Temp out of range"); // 100% garanteed to prevent runtime errors!
 
     public:
-        // Gotta make this a template to preserve perfect moving l-values
+        // Gotta make this a template to preserve perfect forwarding l-values
         /// Assign to global temp
         template <typename U>
         U& operator=(U&& rhs) {
