@@ -4,7 +4,7 @@ T temps[max];
 /// Typesafe, runtime error free global temporary variables.
 template <size_t N, typename T = int, size_t max = 20>
 class temp {
-    static_assert(N < max, "Temp out of range"); // 100% garenteed to prevent runtime errors!
+    static_assert(N < max, "Temp out of range"); // 100% garanteed to prevent runtime errors!
 
 public:
     // Gotta make this a template to preserve perfect moving l-values
