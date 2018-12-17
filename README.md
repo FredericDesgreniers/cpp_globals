@@ -13,10 +13,10 @@ Type / Runtime -safe c++ global temp variables. Why make local variables when th
 ```cpp
     int x = 10;
 
-    temp<0>() = x; // l-value support
+    temp() = x; // l-value support
     temp<2>() = 20; // r-value
 
-    temp<0>() = std::string("a temp value!"); // Works with any type! Each type has it's own temp memory!
+    temp() = std::string("a temp value!"); // Works with any type! Each type has it's own temp memory!
 
     std::cout << *temp<2, int>() << std::endl; // OUTPUT: 20
     std::cout << *temp<0, std::string>() << std::endl; //OUTPUT: a temp value!
